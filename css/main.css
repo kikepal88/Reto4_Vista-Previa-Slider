@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --dark-blue-color: hsl(240, 38%, 20%);
+  --grayish-blue-color: hsl(240, 18%, 77%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  font-family: "Inter";
+  font-size: 1.8rem;
+}
+
+main {
+  width: 100%;
+  max-width: 1440px;
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/vista-prrevia-slider.appspot.com/o/pattern-bg.svg?alt=media&token=7be71ff0-46c1-4645-ab3b-86f42a98ff6e),
+    url(https://firebasestorage.googleapis.com/v0/b/vista-prrevia-slider.appspot.com/o/pattern-quotes.svg?alt=media&token=ead41236-38c2-4044-ae03-93621f75a207),
+    url(https://firebasestorage.googleapis.com/v0/b/vista-prrevia-slider.appspot.com/o/pattern-curve.svg?alt=media&token=8cebea82-722f-41b1-b0cb-03c9d9c00af3);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 91%, 15%, 80%;
+  background-position-x: center, center, left;
+  background-position-y: 5%, 65%, bottom;
+  text-align: center;
+  padding: 2rem;
+}
+
+main .main-slider1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main .main-text {
+  width: 95%;
+  order: 3;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  color: var(--dark-blue-color);
+}
+.main-text .text-description {
+  font-weight: 500;
+  line-height: 1.1;
+}
+.main-text .text-author {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.text-author .profession {
+  color: var(--grayish-blue-color);
+}
+main .main-img {
+  order: 1;
+  width: 80%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  top: 25px;
+}
+.main-img figure img {
+  width: 100%;
+}
+
+main .main-slider2 {
+  display: none;
+}
+
+main .main-button-slider {
+  height: 30px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
