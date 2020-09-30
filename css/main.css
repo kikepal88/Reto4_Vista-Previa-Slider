@@ -41,7 +41,7 @@ main .main-slider1 {
 }
 main .main-text {
   width: 95%;
-  order: 3;
+  order: 2;
   margin-top: 120px;
   margin-bottom: 30px;
   color: var(--dark-blue-color);
@@ -61,7 +61,7 @@ main .main-text {
 main .main-img {
   order: 1;
   width: 80%;
-  max-width: 500px;
+  max-width: 320px;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
@@ -97,4 +97,53 @@ main .main-button-slider {
 
 main .main-button-slider a {
   padding: 1rem;
+}
+
+@media screen and (min-width: 480px) {
+  main {
+    padding: 3rem;
+    background-size: 85%, 12%, 75%;
+    background-position-y: 5%, 65%, bottom;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  main {
+    padding: 4rem;
+    background-size: 75%, 10%, 70%;
+    background-position-y: 5%, 70%, bottom;
+  }
+
+  main .main-img {
+    max-width: 350px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  main {
+    padding: 5rem;
+    background-size: 70%, 8%, 70%;
+    background-position-y: 5%, 75%, bottom;
+  }
+
+  main .main-img {
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    padding: 5rem;
+    background-size: 70%, 8%, 70%;
+    background-position-y: 5%, 75%, bottom;
+  }
+
+  main .main-text {
+    order: 1;
+  }
+
+  main .main-img {
+    order: 2;
+    max-width: 400px;
+  }
 }
