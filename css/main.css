@@ -178,17 +178,16 @@ main .main-button-slider a {
 
   main .main-img {
     order: 2;
-    /* max-width: 320px; */
-    max-width: 50%;
+    max-width: 45%;
     position: relative;
     right: 50px;
     z-index: 1;
   }
 
   main .main-button-slider {
-    padding: 5px;
+    padding: 3px;
     width: 70px;
-    height: 30px;
+    height: 35px;
     top: 10px;
     left: 60px;
     z-index: 2;
@@ -204,6 +203,29 @@ main .main-button-slider a {
 
 @media screen and (min-width: 1024px) {
   body {
-    font-size: 3.2rem;
+    font-size: 2.2rem;
+  }
+
+  main .main-slider1 {
+    display: none;
+  }
+
+  main .main-slider2 {
+    display: flex;
+  }
+
+  main .main-text {
+    max-width: 450px;
+    top: 20px;
+    left: 40px;
+  }
+
+  main .main-img {
+    max-width: 40%;
+    right: 20px;
+  }
+
+  main .main-button-slider {
+    width: 80px;
   }
 }
